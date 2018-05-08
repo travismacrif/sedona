@@ -1,0 +1,14 @@
+{
+  "name": "first-project",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "repository": "https://github.com/travismacrif/first-project",
+  "author": "Travis Macrif <a.travismacrif@gmail.com>",
+  "license": "WTFPL",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-watch": "^4.3.11",
+    "run-sequence": "^2.2.0"
+  }
+}
