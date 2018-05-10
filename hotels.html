@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Hotels</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="main-header-2">
+      <div class="container-2">
+        <nav class="main-navigation-2">
+          <ul>
+            <li>
+             <a href="#">Информация</a>
+            </li>
+            <li>
+              <a href="#">Фото и видео</a>
+            </li>
+            <li>
+              <a href="#">Карта штата</a>
+            </li>
+            <li>
+              <a href="#">Гостиницы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="index-logo">
+        <img src="img/index-logo.png" width="135" height="70" alt="City of sedona">
+      </div>
+    </header>
+    <main>
+      <div class="container-2">
+        <img src="img/background-2.jpg" alt="background-2">
+        <form class="choice-form" action="#" method="get">
+          <h2>Инфраструктура:</h2>
+          <input type="checkbox" id="pool" name="pool" value="pool">
+          <label for="pool"><p>Бассейн</p></label>
+          <input type="checkbox" id="parking" name="parking" value="parking">
+          <label for="parking"><p>Парковка</p></label>
+          <input type="checkbox" id="wi-fi" name="wi-fi" value="wi-fi">
+          <label for="wi-fi"><p>Wi-fi</p></label><br>
+          <h2>Тип жилья:</h2>
+          <input type="checkbox" id="hotel" name="hotel" value="hotel">
+          <label for="hotel"><p>Гостиница</p></label>
+          <input type="checkbox" id="motel" name="motel" value="motel">
+          <label for="motel"></label><p>Мотель</p></label>
+          <input type="checkbox" id="apartments" name="apartments" value="apartments">
+          <label for="Apartments"><p>Апартаменты</p></label><br>
+          <h2>Стоимость в сутки (Р):</h2>
+          <p>От 0 до 3000</p>
+          <input type="range" min="0" >
+          <input type="range" max="3000"><br>
+          <button class="btn"  value="show">Показать</button>
+        </form>
+      </div>
+      <div class="results">
+        <b>Найдено:3</b>
+        <p>Сортировка:</p>
+        <a href="">По цене</a>
+        <a href="">По типу</a>
+        <a href="">По рейтингу</a>
+        <img src="img/icon-up-dir.png" alt="up">
+        <img src="img/icon-down-dir.png" alt="down">
+      </div>
+      <div class="hotels">
+        <img src="img/hotel-1.png" alt="hotel-1">
+        <a href="#">Amara resort & spa</a>
+        <p>Гостиница от 4000 р.</p>
+        <button class="btn"  value="detail"><a href="#">Подробнее</a></button>
+        <button class="btn"  value="buy"><a href="#">Забронировать</a></button>
+        <img src="img/4-stars.png" alt="4-stars">
+        <p>Рейтинг: 8,5</p>
+        <img src="img/hotel-2.png" alt="hotel-2">
+        <a href="#">Desert quail inn</a>
+        <p>Мотель от 3000 р.</p>
+        <button class="btn"  value="detail"><a href="#">Подробнее</a></button>
+        <button class="btn"  value="buy"><a href="#">Забронировать</a></button>
+        <img src="img/3-stars.png" alt="3-stars">
+        <p>Рейтинг: 8,9</p>
+        <img src="img/hotel-3.png" alt="hotel-3">
+        <a href="#">Villas at poco diablo</a>
+        <p>Апартаменты от 2000 р.</p>
+        <button class="btn"  value="detail"><a href="#">Подробнее</a></button>
+        <button class="btn"  value="buy"><a href="#">Забронировать</a></button>
+        <img src="img/2-stars.png" alt="2-stars">
+        <p>Рейтинг: 9,2</p>
+      </div>
+    </main>
+    <footer class="main-footer">
+        <div class="container">
+          <section class="footer-visit-sedona">
+            #VISITSEDONA
+          </section>
+          <section class="footer-social">
+            <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+            <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+            <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+          </section>
+          <section class="footer-copyright">
+            <a class="btn" href="https://htmlacademy.ru">HTML
+                Academy</a>
+          </section>
+        </div>
+      </footer>
+  </body>
+</html>
