@@ -89,7 +89,9 @@ li {
 }
 
 .reasons {
+
   margin: 0 40px;
+
 }
 .reasons-item-1 {
   text-align: center;
@@ -116,11 +118,50 @@ li {
 
 .features-item {
   display: inline-block;
-  width: 420px;
+  width: 340px;
   vertical-align: top;
   height: 334px;
   text-align: center;
+  margin: 0 40px;
 }
+
+.features-
+
+.reasons-item-2 {
+
+  text-align: center;
+  width: 400px;
+  height: 255px;
+  margin-left: 835px;
+}
+
+
+.reasons-item-2 {
+  position: absolute;
+  margin-right: 35px;
+  right: 0;
+  width: 400px;
+  height: 255px;
+
+}
+
+.reasons-pic-2 {
+
+  height: 255px;
+  width: 800px;
+  top: -1px;
+  left: 0px;
+  margin-left: 35px;
+
+}
+
+
+
+}
+
+
+
+
 
 
 
@@ -272,3 +313,4 @@ body > * > * > *::before {
   margin: 0;
   padding: 0;
 }
+
