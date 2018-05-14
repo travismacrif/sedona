@@ -2,13 +2,11 @@ html,
 body {
   margin: 0;
   padding: 0;
-
-
 }
+
 body {
-  background-image: url();
   font-family: PT sans;
-  background-color: rgb(242, 242, 242)
+  background-color: rgb(242, 242, 242);
 }
 
 .container {
@@ -18,23 +16,13 @@ body {
   background-color: white;
 }
 
+.main-navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
----------------------Сетка-----------------------------
+/* Вспомогательная сетка */
 
 body > *,
 body > * > *,
@@ -88,87 +76,9 @@ body > * > *::before {
 body > * > * > * {
   background: rgba(234, 255, 45, 0.2);
   box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
-
 }
 
 body > * > * > *::before {
   color: black;
-
   background: rgb(234, 255, 45);
 }
-
-.main-header::before {
-  content: ".main-header";
-}
-
-.container::before {
-  content: ".container";
-}
-
-.main-header .container::before {
-  top: auto;
-  bottom: -28px;
-}
-
-.main-navigation::before {
-  content: ".main-navigation";
-}
-
-.user-block::before {
-  content: ".user-block";
-}
-
-.index-logo::before {
-  content: ".index-logo";
-}
-
-.features::before {
-  content: ".features";
-  top: -28px;
-}
-
-.features-item::before {
-  content: ".features-item";
-}
-
-.index-content::before {
-  content: ".index-content";
-}
-
-.index-content-left::before {
-  content: ".index-content-left";
-  left: auto;
-  right: 0;
-}
-
-.index-content-right::before {
-  content: ".index-content-right";
-  left: auto;
-  right: 0;
-}
-
-.main-footer::before {
-  content: ".main-footer";
-}
-
-.main-footer .container::before {
-  top: -28px;
-}
-
-.footer-contacts::before {
-  content: ".footer-contacts";
-}
-
-.footer-social::before {
-  content: ".footer-social";
-}
-
-.footer-copyright::before {
-  content: ".footer-copyright";
-}
-
-.main-navigation ul {
-  margin: 0;
-  padding: 0;
-}
-
