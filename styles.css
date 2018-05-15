@@ -2,13 +2,12 @@ html,
 body {
   margin: 0;
   padding: 0;
-
-
 }
+
 body {
-  background-image: url();
-  font-family: PT sans;
-  background-color: rgb(242, 242, 242)
+  font-family: "PT sans";
+  background-color: rgb(242, 242, 242);
+  text-transform: uppercase;
 }
 
 .container {
@@ -18,23 +17,121 @@ body {
   background-color: white;
 }
 
+.main-navigation ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.main-navigation {
+  margin-right: 71px;
+  margin-left: 71px;
+  min-height: 56px;
+}
+
+.index-logo {
+  position: absolute;
+  top: 0;
+  right: 534px;
+}
 
 
 
+.introduction-picture {
+  padding-top: 77px;
+  padding-left: 372px;
+  padding-left: auto;
+  min-height: 490px;
+}
 
 
 
+.reason-main {
+  text-align: center;
+  margin-bottom: 54px;
+}
+
+.reason-main b {
+  font-size: 21px;
+}
+
+.reason-main p {
+  font-size: 14px;
+  padding-top: 18px;
+}
+
+.reason-with-picture {
+  display: flex;
+  min-height: 254px;
+}
+
+.reason-with-picture .reason {
+  text-align: center;
+  padding: 60px;
+}
+
+.reason b {
+
+  font-size: 20px;
+}
+
+.reason p {
+  font-size: 14px;
+}
 
 
+.feature {
+  display: flex;
 
 
+}
 
+.feature-item {
+  width: 400px;
+  min-height: 270px;
+  text-align: center;
+  padding-top: 60px;
+}
 
+.reasons {
+  display: flex;
+  margin-right: 70px;
+  margin-left: 70px;
+  min-height: 255px;
+  text-align: center;
+}
 
+.interested {
+  min-height: 163px;
+}
 
+.find-hotels {
+  width: 574px;
+  min-height: 482px;
+  margin-left: 313px;
+  margin-bottom: 77px;
+}
 
+.main-footer {
+  display: flex;
+  min-height: 122px;
+  justify-content: space-around;
+}
 
----------------------Сетка-----------------------------
+.footer-visit-sedona {
+  width: 240px;
+}
+
+.footer-social {
+  width: 400px;
+}
+
+.footer-copyright {
+  width: 240px;
+}
+/* Вспомогательная сетка */
 
 body > *,
 body > * > *,
@@ -88,87 +185,15 @@ body > * > *::before {
 body > * > * > * {
   background: rgba(234, 255, 45, 0.2);
   box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
-
 }
 
 body > * > * > *::before {
   color: black;
-
   background: rgb(234, 255, 45);
 }
 
-.main-header::before {
-  content: ".main-header";
-}
-
-.container::before {
-  content: ".container";
-}
-
-.main-header .container::before {
-  top: auto;
-  bottom: -28px;
-}
-
-.main-navigation::before {
-  content: ".main-navigation";
-}
-
-.user-block::before {
-  content: ".user-block";
-}
-
-.index-logo::before {
-  content: ".index-logo";
-}
-
-.features::before {
-  content: ".features";
-  top: -28px;
-}
-
-.features-item::before {
-  content: ".features-item";
-}
-
-.index-content::before {
-  content: ".index-content";
-}
-
-.index-content-left::before {
-  content: ".index-content-left";
-  left: auto;
-  right: 0;
-}
-
-.index-content-right::before {
-  content: ".index-content-right";
-  left: auto;
-  right: 0;
-}
-
-.main-footer::before {
-  content: ".main-footer";
-}
-
-.main-footer .container::before {
-  top: -28px;
-}
-
-.footer-contacts::before {
-  content: ".footer-contacts";
-}
-
-.footer-social::before {
-  content: ".footer-social";
-}
-
-.footer-copyright::before {
-  content: ".footer-copyright";
-}
-
-.main-navigation ul {
-  margin: 0;
-  padding: 0;
-}
-
+@font-face {
+  font-family: "PTSans";
+  src: url("../fonts/PTSans.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
