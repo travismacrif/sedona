@@ -118,34 +118,35 @@
         <h1 class="interested-name">Заинтересовались?</h1>
         <p>Укажите предполагаемые даты поездки,
           <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <div class="find-hotels">
-          <h2>Поиск гостиницы в Седоне</h2>
+      </div>
+      <div class="find-hotels">
+        <h2 class="find-hotels-form-title">Поиск гостиницы в Седоне</h2>
+        <div class="map">
+          <img src="img/map.png" width="1200" height="473" alt="Map">
         </div>
-        <div class="map-picture">
-          <div class="map">
-            <img src="img/map.jpg" width="1200" height="476" alt="map">
-          </div>
-        </div>
-        <form class="appointment-form" action="https://echo
+        <form class="find-hotels-form" action="https://echo
         .htmlacademy.ru" method="post">
-          <div class="appointment-form-line">
-            <label for="date-1">Дата заезда:</label>
-            <input type="date" name="date-1" id="date-1" value="24 апреля 2017" placeholder="24 апреля 2017">
+          <div class="find-hotels-form-line">
+            <label for="date-1" class="find-hotels-form-label">Дата заезда:</label>
+            <input type="date" name="date-1" id="date-1" value="2017-04-24" class="find-hotels-form-input">
           </div>
-          <div class="appointment-form-line">
-            <lable for="date-2">Дата выезда:</lable>
-            <input type="date" name="date-2" id="date-2" value="04 июля 2017" placeholder="04 июля 2017">
+          <div class="find-hotels-form-line">
+            <label for="date-2" class="find-hotels-form-label">Дата выезда:</label>
+            <input type="date" name="date-2" id="date-2" value="2017-07-04" class="find-hotels-form-input">
           </div>
-          <div class="appointment-form-line">
-            <p>Взрослые:</p>
-            <button class="btn" type="button" name="minus-1" id="minus-1"></button>
-            <button class="btn" type="button" name="plus-1" id="plus-1"></button>
-            <p>Дети:</p>
+          <div class="find-hotels-form-line">
+            <label>Взрослые:</label>
+            <div class="find-hotels-form-button-group">
+              <button class="btn" type="button" name="minus-1" id="minus-1"></button>
+              <input type="number">
+              <button class="btn" type="button" name="plus-1" id="plus-1"></button>
+            </div>
+            <label>Дети:</label>
             <button class="btn" type="button" name="minus-2" id="minus-2"></button>
             <button class="btn" type="button" name="plus-2" id="plus-2"></button>
             <br>
-            <button class="btn" type="submit" name="find">Найти</button>
           </div>
+          <button class="find-hotels-form-submit-button" type="submit" name="find">Найти</button>
         </form>
       </div>
     </main>
