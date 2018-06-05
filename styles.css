@@ -10,6 +10,15 @@ body {
   text-transform: uppercase;
 }
 
+button {
+  border: 0;
+}
+
+input {
+  font-family: inherit;
+  border: 0;
+}
+
 .container {
   min-width: 1200px;
   width: 1200px;
@@ -121,7 +130,6 @@ body {
 }
 .interested {
   position: relative;
-  min-height: 290px;
   text-align: center;
   padding-top: 30px;
 }
@@ -135,42 +143,64 @@ body {
   line-height: 23px;
 }
 
-.interested h2 {
+.find-hotels {
+  position: relative;
+}
+
+.find-hotels-form {
+  position: absolute;
+  top: 87px;
+  left: 316px;
+  width: 458px;
+  padding: 55px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.find-hotels-form-title {
   width: 568px;
-  height: 55px;
-  background-color: #766357;
-  color: white;
+  padding: 30px 0;
+  margin: 0 auto;
   font-size: 21px;
   font-weight: bold;
-  padding-top: 30px;
+  background-color: #766357;
+  color: white;
+  text-align: center;
 }
 
-.find-hotels {
-  width: 574px;
-  min-height: 482px;
-  margin-left: 315px;
-  margin-bottom: 77px;
-  padding-top: 19px;
-}
-
-.map {
-  position: absolute;
-  top: 290px;
-  z-index: 1;
-}
-
-.appointment-form {
-  position: absolute;
-  z-index: 2;
-  width: 570px;
-  height: 396px;
-  background-color: white;
-  top: 290px;
-  right: 315px;
-}
-.appointment-form-line {
+.find-hotels-form-line {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
   font-size: 14px;
   font-weight: bold;
+}
+
+.find-hotels-form-line:last-of-type {
+  margin-bottom: 55px;
+}
+
+.find-hotels-form-label {
+  flex-shrink: 0;
+  margin-right: 20px;
+  line-height: 38px;
+}
+
+.find-hotels-form-input {
+  width: 100%;
+  padding: 0 10px;
+  line-height: 38px;
+  background-color: #f2f2f2;
+}
+
+.find-hotels-form-submit-button {
+  width: 100%;
+  padding: 16px 0;
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #81b3d2;
+  color: #fff;
 }
 
 .main-footer {
@@ -181,7 +211,6 @@ body {
 
 .footer-visit-sedona {
   width: 240px;
-
   font-size: 21px;
   padding-top: 60px;
   padding-left: 135px;
@@ -203,6 +232,7 @@ body {
 .social-btn:nth-child(2) {
   background: #81b3d2 url("img/facebook.png") no-repeat center;
 }
+
 .social-btn:nth-child(3) {
   background: #81b3d2 url("img/youtube.png") no-repeat center;
 }
@@ -215,64 +245,3 @@ body {
   font-size: 14px;
   width: 240px;
 }
-
-/* Вспомогательная сетка */
-
-/* body > *,
-body > * > *,
-body > * > * > * {
-  position: relative;
-}
-
-body > *::before,
-body > * > *::before,
-body > * > * > *::before {
-  display: none;
-}
-
-body > *::before {
-  top: -3px;
-  left: -3px;
-}
-
-body > * > *::before {
-  top: -3px;
-  left: -3px;
-}
-
-body > * > * > *::before {
-  top: 0;
-  left: 0;
-}
-
-body > * {
-  background: rgba(0, 128, 0, 0.2);
-  box-shadow: 0 0 0 3px green;
-}
-
-body > *::before {
-  color: white;
-
-  background: green;
-}
-
-body > * > * {
-  background: rgba(255, 45, 82, 0.2);
-  box-shadow: 0 0 0 3px rgb(255, 45, 82);
-}
-
-body > * > *::before {
-  color: white;
-
-  background: rgb(255, 45, 82);
-}
-
-body > * > * > * {
-  background: rgba(234, 255, 45, 0.2);
-  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
-}
-
-body > * > * > *::before {
-  color: black;
-  background: rgb(234, 255, 45);
-} */
