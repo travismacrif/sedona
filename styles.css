@@ -161,6 +161,7 @@ input {
   width: 568px;
   padding: 30px 0;
   margin: 0 auto;
+  margin-top: 45px;
   font-size: 21px;
   font-weight: bold;
   background-color: #766357;
@@ -176,6 +177,10 @@ input {
   font-weight: bold;
 }
 
+.find-hotels-form-line:nth-child(3) {
+  padding-top: 8px;
+}
+
 .find-hotels-form-line:last-of-type {
   margin-bottom: 55px;
 }
@@ -186,11 +191,23 @@ input {
   line-height: 38px;
 }
 
+.find-hotels-form-button-group {
+  background-color: #f2f2f2;
+  margin-top: -10px;
+}
+
 .find-hotels-form-input {
   width: 100%;
   padding: 0 10px;
   line-height: 38px;
   background-color: #f2f2f2;
+}
+
+input[type="number"] {
+  width: 25px;
+  background-color: #f2f2f2;
+  padding: 10px 0;
+  margin: 0 30px;
 }
 
 .find-hotels-form-submit-button {
