@@ -97,14 +97,13 @@ input {
 
 .feature-item {
   width: 400px;
-  min-height: 270px;
+  padding: 65px 0;
   text-align: center;
-  padding-top: 60px;
 }
 
 .feature-item p {
-  padding-top: 10px;
   font-size: 14px;
+  padding-top: 10px;
 }
 
 .feature-name {
@@ -121,7 +120,7 @@ input {
 
 .reasons .reason {
   padding-top: 43px;
-  padding-left: 20px;
+  width: 400px;
   line-height: 21px;
 }
 
@@ -222,27 +221,25 @@ input[type="number"] {
 
 .main-footer {
   display: flex;
-  min-height: 122px;
-  justify-content: space-around;
+  justify-content: space-between;
+  text-align: center;
 }
 
 .footer-visit-sedona {
-  width: 240px;
+  flex-basis: 400px;
   font-size: 21px;
-  padding-top: 60px;
-  padding-left: 135px;
+  margin: 45px 0;
 }
 
 .footer-social {
-  width: 400px;
-  padding-top: 52px;
-  padding-left: 165px;
+  flex-basis: 400px;
 }
 
 .social-btn {
   display: inline-block;
   width: 47px;
   height: 47px;
+  margin: 35px 0;
   background: #81b3d2 url("img/twitter.png") no-repeat center;
 }
 
@@ -256,9 +253,10 @@ input[type="number"] {
 
 .footer-copyright {
   display: flex;
-  justify-content: space-evenly;
-  padding-top: 55px;
-  padding-right: 80px;
+  flex-basis: 400px;
+  justify-content: center;
+  line-height: 26px;
   font-size: 14px;
-  width: 240px;
+  margin: 35px 0;
+  height: 41px;
 }
