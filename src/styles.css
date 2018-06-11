@@ -82,9 +82,13 @@ input {
 .choice-form p {
   font-size: 14px;
 }
+.choice-form {
+  padding: 15px 0;
+  padding-left: 80px;
+}
 
 .choice-form-column-1 {
-  flex-basis: 313px;
+  flex-basis: 241px;
   justify-content: center;
 }
 
