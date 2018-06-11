@@ -60,13 +60,24 @@
             <input type="checkbox" id="apartments" name="apartments" value="apartments" checked>
             <label for="Apartments">Апартаменты</label>
           </div>
-          <div class="choice-form-column-3">
-            <h2>Стоимость в сутки (Р):</h2>
-            <p>От 0 до 3000</p>
-            <input type="range" min="0">
-            <input type="range" max="3000">
-            <br>
-            <button class="btn" value="show">Показать</button>
+          <div class="filter-range">
+            <div class="filter-range-title">Стоимость в сутки (Р):</div>
+            <div class="price-controls">
+              <label class="min-price">от
+                <input type="text" name="min-price" value="0">
+              </label>
+              <label class="max-price">от
+                <input type="text" name="max-price" value="3000">
+              </label>
+            </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
+            <button class="btn-transparent" type- "submit">Показать</button>
           </div>
         </form>
       </div>
