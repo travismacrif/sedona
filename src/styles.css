@@ -69,6 +69,33 @@ input {
   padding-top: 18px;
 }
 
+.choice-form {
+  display: flex;
+  height: 217px;
+}
+
+.choice-form h2 {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.choice-form p {
+  font-size: 14px;
+}
+
+.choice-form-column-1 {
+  flex-basis: 313px;
+  justify-content: center;
+}
+
+.choice-form-column-2 {
+  flex-basis: 488px;
+}
+
+.choice-form-column-3 {
+  flex-basis: 400px;
+}
+
 .reason-with-picture {
   display: flex;
   height: 258px;
@@ -89,6 +116,17 @@ input {
 .reason p {
   font-size: 14px;
   padding-bottom: 10px;
+}
+
+.results {
+  display: flex;
+  align-self: center;
+  height: 86px;
+}
+
+.hotel {
+  display: flex;
+  height: 152px;
 }
 
 .feature {
@@ -223,23 +261,25 @@ input[type="number"] {
   display: flex;
   justify-content: space-between;
   text-align: center;
+  height: 120px;
 }
 
 .footer-visit-sedona {
   flex-basis: 400px;
   font-size: 21px;
-  margin: 45px 0;
+  align-self: center;
 }
 
 .footer-social {
   flex-basis: 400px;
+  align-self: center;
 }
 
 .social-btn {
   display: inline-block;
   width: 47px;
   height: 47px;
-  margin: 35px 0;
+
   background: #81b3d2 url("img/twitter.png") no-repeat center;
 }
 
@@ -257,6 +297,11 @@ input[type="number"] {
   justify-content: center;
   line-height: 26px;
   font-size: 14px;
-  margin: 35px 0;
+  align-self: center;
   height: 41px;
+}
+
+.footer-copyright p {
+  align-self: center;
+  padding-right: 5px;
 }
