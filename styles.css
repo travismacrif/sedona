@@ -72,6 +72,7 @@ input {
 .choice-form {
   display: flex;
   height: 188px;
+  color: white;
 }
 
 .choice-form h2 {
@@ -95,6 +96,33 @@ input {
 
 .choice-form-column-2 {
   flex-basis: 488px;
+}
+
+.checkbox {
+  position: relative;
+  display: block;
+  padding-left: 34px;
+  line-height: 27px;
+}
+
+.checkbox input[type="checkbox"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 27px;
+  height: 27px;
+  margin: 0;
+  background-size: 23px 23px;
+  background-position: 2px 2px;
+  background-repeat: no-repeat;
+  background-image: url("img/checkbox-off.png");
+  -webkit-appearance: none;
+  outline: none;
+}
+
+.checkbox input[type="checkbox"]:checked {
+  background-size: 27px 23px;
+  background-image: url("img/checkbox-on.png");
 }
 
 .filter-range {
@@ -245,13 +273,111 @@ input {
 
 .results {
   display: flex;
+  padding: 0 73px;
+  height: 88px;
+}
+
+.results b {
+  font-size: 21px;
+  line-height: 88px;
+}
+
+.results .first-column {
+  width: 135px;
+}
+
+.results .second-column {
+  display: flex;
+  width: 775px;
+  margin-left: 30px;
+}
+
+.results .third-column {
+  display: flex;
+  width: 111px;
+}
+
+.results p {
+  display: flex;
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
   align-self: center;
-  height: 86px;
+}
+
+.results a {
+  display: flex;
+  align-self: center;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 18px;
+  margin-left: 36px;
+}
+
+.results img {
+  display: flex;
+  align-self: center;
+  margin-left: 12px;
+}
+
+.results img:first-of-type {
+  margin-left: auto;
+}
+
+.hotels {
+  padding: 0 73px;
+  border-top: 1px solid #e5e5e5;
 }
 
 .hotel {
   display: flex;
-  height: 152px;
+  height: 151px;
+  justify-content: start;
+}
+
+.hotels .first-column {
+  margin-top: 30px;
+  margin-right: 29px;
+}
+
+.hotels .third-column {
+  display: flex;
+  width: 111px;
+  font-size: 14px;
+  line-height: 30px;
+  color: #666666;
+  margin-left: auto;
+  padding: 25px 0;
+}
+
+.hotels .third-column img {
+  display: block;
+  margin-left: auto;
+}
+
+.hotels .third-column p {
+  background-color: #f2f2f2;
+  text-align: center;
+  margin: 0;
+  width: 111px;
+  margin-top: 40px;
+}
+
+.hotel img {
+}
+
+.hotel-description a {
+  text-decoration: none;
+  font-size: 21px;
+  font-weight: bold;
+  color: black;
+}
+
+.hotel-description btn {
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .feature {
