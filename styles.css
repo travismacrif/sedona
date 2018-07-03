@@ -207,10 +207,8 @@ input {
 .range-toggle {
   position: absolute;
   top: -9px;
-
   width: 4px;
   height: 4px;
-
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
@@ -338,6 +336,18 @@ input {
 .hotels .first-column {
   margin-top: 30px;
   margin-right: 29px;
+}
+
+.hotels .second-column {
+  margin: 25px 0;
+}
+
+.hotels .second-column p {
+  margin: 0;
+}
+
+.hotels .second-column button {
+  color: white;
 }
 
 .hotels .third-column {
