@@ -343,19 +343,39 @@ input {
 
 .results .third-column {
   display: flex;
+  justify-content: flex-end;
+  align-items: center;
   width: 111px;
-  background: url(img/icon-up-dir.png) no-repeat 80px 38px,
-    url(img/icon-down-dir.png) no-repeat 100px 38px;
 }
 
-.results .third-column:hover {
-  background: url(img/icon-up-dir-black.png) no-repeat 80px 38px,
-    url(img/icon-down-dir-black.png) no-repeat 100px 38px;
+.results .third-column .arrow {
+  width: 11px;
+  height: 10px;
 }
 
-.results .third-column:active {
-  background: url(img/icon-up-dir-blue.png) no-repeat 80px 38px,
-    url(img/icon-down-dir-blue.png) no-repeat 100px 38px;
+.results .third-column .arrow-up {
+  background: url(img/icon-up-dir.png) no-repeat 0 0;
+}
+
+.results .third-column .arrow-down {
+  margin-left: 5px;
+  background: url(img/icon-down-dir.png) no-repeat 0 0;
+}
+
+.results .third-column .arrow-up:hover {
+  background: url(img/icon-up-dir-black.png) no-repeat 0 0;
+}
+
+.results .third-column .arrow-down:hover {
+  background: url(img/icon-down-dir-black.png) no-repeat 0 0;
+}
+
+.results .third-column .arrow-up:active {
+  background: url(img/icon-up-dir-blue.png) no-repeat 0 0;
+}
+
+.results .third-column .arrow-down:active {
+  background: url(img/icon-down-dir-blue.png) no-repeat 0 0;
 }
 
 .results p {
@@ -424,7 +444,6 @@ input {
 }
 
 .columns .first-column {
-  height: 58px;
   margin: 0;
   margin-top: 10px;
 }
@@ -435,7 +454,6 @@ input {
 }
 
 .columns .second-column {
-  height: 58px;
   margin: 0;
   margin-top: 10px;
 }
@@ -486,7 +504,7 @@ input {
 .hotel-description .second-column button.btn {
   width: 142px;
   background-color: #766357;
-  margin-top: 9px;
+  margin-top: 10px;
   margin-left: 5px;
 }
 
@@ -637,6 +655,7 @@ input {
 }
 
 .find-hotels-form-line {
+  position: relative;
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
@@ -650,6 +669,12 @@ input {
 
 .find-hotels-form-line:last-of-type {
   margin-bottom: 55px;
+}
+
+.find-hotels-form-line .calendar {
+  position: absolute;
+  top: 8px;
+  right: 8px;
 }
 
 .find-hotels-form-label {
@@ -669,9 +694,11 @@ input {
   line-height: 38px;
   background-color: #f2f2f2;
 }
+
 .find-hotels-form-input:hover {
   background-color: #ebebeb;
 }
+
 .find-hotels-form-input:focus {
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
@@ -777,7 +804,7 @@ input[type="number"] {
 }
 
 .footer-copyright:active {
-  background: url(img/html-academy-blue.png) no-repeat 240px 0;
+  background: url(img/html-academy-grey.png) no-repeat 240px 0;
 }
 
 .footer-copyright p {
